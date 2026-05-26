@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/data_jpa
+    username: postgres
+    password: anthonycoding
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      # Ensure this is indented correctly under hibernate
+      ddl-auto: create-drop
+    # Better to put the dialect here if you want to be explicit
+    database: postgresql
+    show-sql: true
